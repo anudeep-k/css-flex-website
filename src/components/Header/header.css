@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  background: grey;
+  align-content: center;
+  color: white;
+}
+.header-item {
+  flex: 1;
+}
+.nav {
+  flex: 2;
+}
+.nav-links {
+  flex: 2;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+.nav-links .nav-link{
+    text-decoration: none;
+    color: white;
+}

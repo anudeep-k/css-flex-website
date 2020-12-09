@@ -1,0 +1,140 @@
+.presentation{
+display: flex;
+align-items: center;
+margin: auto;
+    min-height: 80vh;  
+
+}
+
+.cover{
+   height: 60vh;
+   justify-content: center;
+   display: flex;
+   animation: drop  1.5sec ease;
+}
+.cover img{
+    width: 100%;
+}
+.introduction{
+    flex:1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, grey, grey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img{
+    height:100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.cta-select{
+    border:1px solid grey;
+    width:100px;
+    height:30px;
+    background: transparent;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+
+.cta-add{
+    border:1px solid grey;
+    width:100px;
+    height:30px;
+    background: grey;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 30px 10px 0px 0px;
+}
+.big-circle{
+ position: absolute;
+ top:0px;
+ right: 0px;
+ z-index: -1;
+ opacity: 0.5;
+}
+
+.mid-circle{
+    position: absolute;
+ top:30%;
+ right: 30%;
+ z-index: -1;
+ opacity: 0.5;
+}
+.small-circle{
+    position: absolute;
+   bottom: 0;
+   left: 20%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.laptop-select{
+    width: 15%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    right: 40%;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media(max-width:400px){
+    .burger {
+        display: block;
+        }
+ .presentation{
+     flex-direction: column;
+ }
+ .introduction{
+     margin-top: 5vh;
+     text-align: center;
+ }
+ h1{
+     font-size: 30px;
+ }
+ .cover img {
+    height: 80%;
+}
+ .laptop-select{
+     bottom: 5%;
+     width: 50%;
+     right: 50%;
+     justify-content: space-around;
+      transform: translate(50%, 5%);
+ }
+ .small-circle,
+ .medium-circle,
+ .big-circle {
+     opacity: 0.2;
+ }
+    
+}
