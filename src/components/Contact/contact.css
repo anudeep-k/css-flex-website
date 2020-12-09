@@ -1,0 +1,12 @@
+.contact{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.online-contact{
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
